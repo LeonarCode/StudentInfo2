@@ -14,11 +14,16 @@
     <h1 class="tLogintxt">Teacher Login:</h1>
     <div class="tBoxlog">
         <label for="username">Username:</label>
-        <input type="text" id="username" class="teachUsernameLog">
+        <input type="text" id="teachUsername" class="teachUsernameLog">
         <label for="password">Password: </label>
-        <input type="password" id="password" class="teachPasswordLog">
+        <input type="password" id="teachPassword" class="teachPasswordLog">
     </div>
-    <button type="button" class="tLogbtn">LOGIN</button>
+    <div class="tPaneError">
+        <h1>Error!</h1>
+        <h3>Username & Password Mismatch!</h3>
+        <button onclick="refreshPage()">OK</button>
+    </div>
+    <button onclick="teacherLogin()" type="button" class="tLogbtn">LOGIN</button>
     <button class="tForget">Forgot your password?</button>
 </body>
 <script src="script.js"></script>

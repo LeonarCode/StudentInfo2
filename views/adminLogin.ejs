@@ -14,11 +14,16 @@
     <h1 class="adLogintxt">Admin Login:</h1>
     <div class="adBoxlog">
         <label for="username">Username:</label>
-        <input type="text" id="username" class="teachUsernameLog">
+        <input type="text" id="adUsername">
         <label for="password">Password: </label>
-        <input type="password" id="password" class="teachPasswordLog">
+        <input type="password" id="adPassword">
     </div>
-    <button type="button" class="adLogbtn">LOGIN</button>
+    <div class="aPaneError">
+        <h1>Error!</h1>
+        <h3>Username & Password Mismatch!</h3>
+        <button onclick="refreshPage()">OK</button>
+    </div>
+    <button onclick="adminLogin()" class="adLogbtn">LOGIN</button>
     <button class="adForget">Forgot your password?</button>
 </body>
 <script src="script.js"></script>
